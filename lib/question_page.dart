@@ -40,8 +40,6 @@ class _QuestionPageState extends State<QuestionPage> {
   Future<String> _fetchAnswer(String question) async {
     String API = dotenv.get("API_KEY", fallback: "");
 
-    final apiKey =
-        "qLCeqpnBAFUMbtueZPIoz6WwO57lPDd8Bq8nr9jy"; // Replace with your actual API key
     final url = "https://api.cohere.ai/v1/chat";
 
     final response = await http.post(
